@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="PlantWebApp.css">
+    <link rel="stylesheet" href="Animations.css">
+  </head>
+  <body>
+    <div class="top_bar">
+      <div class="top_container">
+        <div class="logo">
+          <img class="pointer" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" onclick="scrollToTop()">
+        </div>
+        <input id="searchBar" class="search_bar" placeholder="Search" onkeydown="search()" type="text">
+        <div class="icon_bar no_select">
+          <img class="icon pointer" src="images/homeicon.png" alt="Home">
+          <img class="icon pointer" src="images/sharebutton.png" alt="Share">
+          <img class="icon pointer" src="images/compassicon.png" alt="Compass">
+          <img class="icon pointer" src="images/likebutton2.png" alt="Likes">
+          <img class="icon pointer" id="profile" src="images/profile.jpg" alt="Profile">
+        </div>
+      </div>
+    </div>
+    <h1>Welcome to the new Instagram.</h1>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="PlantWebApp.js"></script>
+  </body>
+</html>
